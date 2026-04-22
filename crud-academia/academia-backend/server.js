@@ -13,7 +13,7 @@ app.get('/', (req, res) => res.json({ message: 'API Academia funcionando.' }));
 app.use('/api/treinos', require('./routes/treinoRoutes'));
 app.use('/api/exercicios', require('./routes/exercicioRoutes'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 mongoose
   .connect(process.env.MONGO_URI)
